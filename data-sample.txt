@@ -1,0 +1,43 @@
+
+mealTYpe
+    content: "Start your day with exclusive breakfast options"
+    image: "assets/breakfast.png"
+    meal_type: 1
+    name: "Breakfast"
+    _id: "630f459f4762bce442a8e60a"
+
+
+
+location
+    city: "Delhi"
+    city_id: 1
+    country_name: "India"
+    location_id: 1
+    name: "Shalimar Bagh"
+    _id: "630f138e4762bce442a8e5fc"
+
+
+Filter
+    city: "Delhi"
+    cuisine: [{name:"North India"}]
+    locality: "Anand Vihar"
+    min_price: 599
+    name: "Baba Ka Dhaba"
+    _id: "630df0f04762bce442a8e5f8"
+
+
+aggregate_rating:0,
+city: "",
+city_id: -1,
+contact_number: 0,
+cuisine: [],
+cuisine_id: [],
+image: "",
+locality: "",
+location_id: -1,
+mealtype_id: -1,
+min_price: 0,
+name: "",
+rating_text: "",
+thumb: [],
+_id:-1

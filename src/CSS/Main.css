@@ -1,0 +1,269 @@
+.main-section{
+    height: 70vh; 
+    background-image:linear-gradient(transparent, rgba(0, 0, 0, 0.737)),
+     url(./assets/img-main.png);
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.main-section-header{
+    width: 80vw;
+    /* border: 1px solid yellow; */
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 16px 0px;
+    margin: 16px;
+}
+
+.Email-authentication{
+    color: #192F60;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    width: 398px;
+    padding: 10px 84px;
+    box-shadow: 0px 0px 3px 0 #C7C7C7;
+}
+.Facebook-authentication{
+    color: #192F60;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    width: 398px;
+    padding: 8px 84px;
+    box-shadow: 0px 0px 3px 0 #C7C7C7;
+}
+.email{
+    color: #F44336;
+    font-size: 32px;
+}
+.Facebook{
+    color: #3B5998;
+    font-size: 32px;
+}
+.text-account{
+    color:#192F60;
+}
+.text-signup{
+    color: #ED5A6B;
+}
+#staticBackdropLabel{
+    color: #192F60;
+    font-size: 30px;
+}
+
+
+.position{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand{
+    /* border: 1px solid black; */
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+    padding: 50px;
+    /* margin: 16px 0px; */
+} 
+
+.brand-logo{
+    /* font property */
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#EB2929 ;
+    
+}
+
+.main-title{
+    /* width: 758px; */
+    font-size: 36px;
+    color: white;
+    margin: 32px 0px;
+    font-weight: bold;
+    font-style: Poppins;
+}
+
+.search{
+    /* border: 1px solid black; */
+    width: 730px;
+    
+
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.search-location{
+    font-size: 14px;
+    padding: 16px 20px;
+
+
+} 
+
+.Location-list{
+    position: relative;
+    /* width: 43%; */
+    /* width: 360px; */
+}
+
+.search-autocomplete{
+    position: absolute;
+    /* width: 45%; */
+    list-style: none;
+    padding: 0;
+    border: 1px solid rgb(205, 205, 205);
+    background-color: white;
+    color: #636F88;
+    margin-top: 0.5rem;
+}
+.search-autocomplete li{
+    /* border-bottom: 1px solid rgb(205, 205, 205); */
+    padding: 0.5rem 1rem;
+    /* display: flex; */
+
+}
+.Location-list1{
+    position: relative;
+    /* width: 600px; */
+    /* height: 236px; */
+}
+
+.input-group{
+    width: 477px;
+}
+
+.search-autocomplete1{
+    /* display: flex; */
+    /* position: absolute; */
+    /* width: 100%; */
+    list-style: none;
+    /* padding: 0; */
+    border: 1px solid rgb(205, 205, 205);
+    background-color: white;
+    /* color: #636F88; */
+    margin-top: 0.5rem;
+}
+
+.search-autocomplete1 li{
+
+    padding: 0;
+} 
+
+
+.search-autocomplete-item{
+    display: flex;
+    /* border-bottom: 1px solid black ; */
+    /* padding: 0.5rem 1rem; */
+
+}
+.search-autocomplete-item img{
+    /* display: flex; */
+    width: 12%;
+    /* height: 28%; */
+    border-radius: 50%;
+    /* padding: 1rem ; */
+
+}
+.search-autocomplete-item p{
+    margin: 0 !important;
+}
+
+
+.restaurant-dropbox{
+    font-size: 16px;
+    font-weight: bold;
+    color: #192F60;
+
+}
+.location-dropbox{
+    font-size: 12px;
+    color: #636F88;
+}
+.quick-search-title{
+    color: #192F60;
+    font-size: 30px;
+}
+.quick-search-subtitle{
+    color: #8C96AB;
+    font-size: 18px;
+}
+.food-item-image{
+    width: 160px;
+    height: 160px;
+}
+.food-item-title{
+    font-size: 18px;
+    color: #192F60;
+}
+.food-item-subtitle{
+    color: #8C96AB;
+    font-size: 14px;
+}
+.food-item{
+    width: 360px;
+    height: 160px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px 0 gray;
+    margin-bottom: 32px;
+}
+.list-source{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 32px;    
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .brand{
+        /* border: 1px solid black; */
+        width: 75px;
+        height: 75px;
+        border-radius: 50px;
+        /* margin: 84px 0; */
+        /* padding: 0px 0; */
+   
+    } 
+
+    .brand-logo{
+        /* font property */
+        font-size: 45px;
+        font-weight: bold;
+        color:#EB2929 ;
+        
+    }
+     
+    .main-title{
+        font-size: 28px;
+
+    }
+    .search{
+        width: 100% !important;
+        flex-direction: column;
+    
+    }
+
+    .input-group{
+        width: 100% !important;
+    }
+    .search-autocomplete{
+        display: none;
+    }
+    .search-autocomplete1{
+        display: none;
+    }
+    .main-section{
+        height: auto;
+        padding-bottom: 2rem;
+        background-size: cover;
+    }
+
+}
+
