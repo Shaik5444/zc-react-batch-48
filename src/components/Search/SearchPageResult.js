@@ -26,7 +26,7 @@ function SearchPageResult(){
     };
     let getLocationList = async()=>{
         try{
-            let response = await axios.get('https://zc-batch-48-app-api.herokuapp.com//api/get-location');
+            let response = await axios.get('https://zc-batch-48-app-api.herokuapp.com/api/get-location');
             let data = response.data;
             if(data.status === true){
                 setLocationList([...data.result]);
