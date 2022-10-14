@@ -46,7 +46,7 @@ function RestaurantPage(){
 
     let getRestaurantDetails = async ()=>{
       try {
-        let URL = "http://localhost:5003/api/get-restaurant-details-by-id/" + id;
+        let URL = "https://zc-batch-48-app-api.herokuapp.com/api/get-restaurant-details-by-id/" + id;
         let {data} = await axios.get(URL);
         if(data.status === true){
           setRestaurant({...data.result});
@@ -60,7 +60,7 @@ function RestaurantPage(){
 
     let getMenuItems = async ()=>{
       try {
-        let URL = "http://localhost:5003/api/get-menu-items-list-by-restaurant-id/" + id;
+        let URL = "https://zc-batch-48-app-api.herokuapp.com/api/get-menu-items-list-by-restaurant-id/" + id;
         let {data} = await axios.get(URL);
         if(data.status === true){
           // console.log(data);
@@ -111,7 +111,7 @@ function RestaurantPage(){
       var serverData = {
         amount:totalPrices,
       }
-      var {data} =  await axios.post('http://localhost:5003/api/payment/gen-order',serverData);
+      var {data} =  await axios.post('https://zc-batch-48-app-api.herokuapp.com/api/payment/gen-order',serverData);
       var order = data.order;
       var options = {
           "key": "rzp_test_IJDv8ZdW1Lxl01", // Enter the Key ID generated from the Dashboard
@@ -127,7 +127,7 @@ function RestaurantPage(){
               razorpay_order_id:response.razorpay_order_id,
               razorpay_signature:response.razorpay_signature,
             };
-            var {data} = await axios.post('http://localhost:5003/api/payment/verify',sendData);
+            var {data} = await axios.post('https://zc-batch-48-app-api.herokuapp.com/api/payment/verify',sendData);
             if(data.status === true){
               Swal.fire({
                 icon: 'success',
